@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}" />
+    <link rel="shortcut icon" href="{{ url_for('static',filename='images/usericon.gif')}}" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- header design -->
+              <header class="header">
+                <a href="#" class="logo">Portfolio</a>
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <nav class="navbar">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Work-Domain</a>
+                    <a href="#education">Education</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#porjects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+          <h3>Hello, I am</h3>
+          <h1>Abhijit Majumder</h1>
+          <h3>And I'm a <span class="multiple-text">Aspiring MLOps Engineer </span></h3>
+          <p>I am a computer science engineering student with a passion for technology and its applications. My expertise lies in various areas of the software development lifecycle,
+             particularly in Docker, Ansible, Linux, Machine Learning and DevOps technologies.</p>
+
+          <div class="social-media">
+              <a href="https://www.instagram.com/abhijitwithai?igsh=MTYxaW84aDYwajBoMA==" target="_blank"><i class='bx bxl-instagram'></i></a>
+              <a href="https://www.youtube.com/@abhijitwithai" target="_blank"><i class='bx bxl-youtube'></i></a>
+              <a href="https://github.com/Abhijit28012002" target="_blank"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/abhijit-majumder/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+          </div>
+
+          <a href="/get-files/Abhijit_Majumder_Resume.pdf" class="btn"> Download Resume</a>
+      </div>
+      <div class="home-img">
+        <img src="{{ url_for('static',filename='images/firstImage.png')}}" alt="No image" srcset="">
+      </div>
+      
+  </section>
+         
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="{{ url_for('static',filename='images/aboutImage.png')}}" alt="No Image" srcset="">
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Aspiring MLOps Engineer</h3>
+        <p>Hello, I'm Abhijit Majumder, a passionate Computer Science Engineering student.
+           Proficient in Docker, Ansible, Linux, and more, my core skills span the software development lifecycle.
+            Well-versed in AWS Cloud, Jenkins, and Python, I also excel in machine learning and deep learning.
+             My commitment to continuous learning fuels my exploration of cutting-edge technologies,
+              making me eager to contribute to impactful projects and advance the realm of technology.
+               Knowledgeable in Java, C++, and adept in system administration, I bring a versatile skill set to
+                the table.</p>
+        <a href="https://www.linkedin.com/in/abhijit-majumder/" target="_blank" class="btn">Read More</a>
+      </div>
+
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Software Development</h3>
+          <p>Python is a versatile programming language widely used in software development. Its simplicity, readability,
+             and extensive libraries make it ideal for creating robust and efficient applications.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-cloud' ></i>
+          <h3>DevOps Projects</h3>
+          <p>Utilizing Jenkins, Ansible, Docker, and GitHub, I orchestrate a DevOps project for seamless integration, continuous delivery,
+             and efficient automation, optimizing software development and deployment processes.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-bar-chart-alt'></i>
+          <h3>Machine Learning</h3>
+          <p>Leveraging Python, Keras, and scikit-learn, I develop machine learning project, employing powerful tools for data analysis,
+             model building, and predictive analytics to enhance decision-making processes.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Journey</span></h2>
+
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">Education</h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"> 2020 - Present </i></div>
+                <h3>B.Tech. in Computer Science and Engineering - Government College of Engineering and Textile Technology, Berhampore</h3>
+                <p>CGPA - 8.5/10 <br>Relevant Coursework: Object Oriented Programming, Databases, Discrete Maths, Data Structures and Algorithms, Oper
+                  ating Systems, Computer Networks, Machine Learning, Data Structures and Algorithms, Information Retrieval</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"> 2018 - 2020 </i></div>
+                <h3>Higher Secondary Exam - Gorabazar I.C.Institution</h3>
+                <p>Science <br>Percentage- 84%</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"> 2018</i></div>
+                <h3>10th Exam - Gorabazar I.C.Institution</h3>
+                <p>Percentage- 81%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-column">
+          <h3 class="title">Experience</h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"> 2023 - Present </i></div>
+                <h3>Technical Volunteer - LinuxWorld Informatics Pvt Ltd</h3>
+                <p>Assist students and professionals with tool setup and
+                  project completion, enhancing my skills in working with
+                  experts and teaching students effectively</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"> 2022 - 2023 </i></div>
+                <h3>ARTH3.0 Learner - LinuxWorld Informatics Pvt Ltd</h3>
+                <p>Arth 3.0 training broadened my skills with Ansible, AWS, OpenShift, Jenkins, Kubernetes, Docker, and expertise in Machine Learning, Artificial Intelligence, Java, Python, C++,
+                   and Data Structures/Algorithms—enabling me to tackle diverse challenges across modern technology landscapes.</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"> oct-2023(Remote) </i></div>
+                <h3>Machine Learning Intern - Bharat Intern</h3>
+                <p>In this Program I worked with different machine
+                  learning project like House Price Prediction Model, Wine Quality Prediction Model and IRIS Flower
+                  Classification Model</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skill section design -->
+    <section class="skills" id="skills">
+
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">Coding Languages</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>CSS <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>PYTHON <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>JAVA <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>C++ <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-column">
+          <h3 class="title">Technologies & Tools</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>ANSIBLE <span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>JENKINS <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Kubernetes <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>DOCKER <span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>AWS <span>70%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- portfolio section design -->
+
+    <section class="portfolio" id="porjects">
+      <h2 class="heading">Latest <span>Projects & Blogs</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="{{ url_for('static',filename='images/portfolio1.jpg')}}" alt="">
+          <div class="portfolio-layer">
+            <h4>Flask WebApp</h4>
+            <p>MLOps project with 3 models: movie recommender, flight price predictor. Includes deployment,
+               monitoring, and CI/CD for seamless integration.</p>
+            <a href="https://www.linkedin.com/posts/abhijit-majumder_github-abhijit28012002mlopsflaskproject-activity-7123649840290422784-XqSW?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+
+          <div class="portfolio-box">
+            <img src="{{ url_for('static',filename='images/portfolio2.jpg')}}" alt="">
+            <div class="portfolio-layer">
+              <h4>Virtual Assistant</h4>
+              <p>Simplified many task like send Email, search on Youtube, search Wikipedia,
+                insert data inside database, search in chatgpt etc.</p>
+              <a href="https://www.linkedin.com/posts/abhijit-majumder_ai-python-like-activity-7080858361130291200-bX8l?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+
+            <div class="portfolio-box">
+              <img src="{{ url_for('static',filename='images/portfolio3.jpg')}}" alt="">
+              <div class="portfolio-layer">
+                <h4>NLP Blog</h4>
+                <p>How MNCs(Multi-National Companies) are Benefited from Natural Language Processing(NLP)</p>
+                <a href="https://www.linkedin.com/posts/abhijit-majumder_how-mncsmulti-national-companies-are-benefited-activity-7108846012521230336-D7xq?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+              <div class="portfolio-box">
+                <img src="{{ url_for('static',filename='images/portfolio4.jpg')}}" alt="">
+                <div class="portfolio-layer">
+                  <h4>DevOps Project</h4>
+                  <p>Automating CI/CD with Jenkins, GitHub, DockerHub, and Kubernetes accelerates development, ensuring robust deployment🚀💻</p>
+                  <a href="https://www.linkedin.com/posts/abhijit-majumder_devops-automation-jenkins-activity-7103602132435529728-f7Rr?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+                <div class="portfolio-box">
+                  <img src="{{ url_for('static',filename='images/portfolio5.jpg')}}" alt="">
+                  <div class="portfolio-layer">
+                    <h4> Attendance Management System</h4>
+                    <p>Revolutionizing Attendance Management: Introducing our Face Recognition Attendance System 🚀🚀.</p>
+                    <a href="https://www.linkedin.com/posts/abhijit-majumder_gratitude-mentorship-inspiration-activity-7076614508122652672-Wxd8?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="bx bx-link-external"></i></a>
+                  </div>
+                </div>
+                  <div class="portfolio-box">
+                    <img src="{{ url_for('static',filename='images/portfolio6.jpg')}}" alt="">
+                    <div class="portfolio-layer">
+                      <h4>Computer Vision Project</h4>
+                      <p>Creating a system to Launch and Terminate EC2 Instances with Finger Gestures using Python and computer vision for seamless cloud control! 🚀✋💻</p>
+                      <a href="https://www.linkedin.com/posts/abhijit-majumder_gratitude-mentorship-inspiration-activity-7076614508122652672-Wxd8?utm_source=share&utm_medium=member_desktop" target="_blank"><i class="bx bx-link-external"></i></a>
+                    </div>
+                  </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" name="" id="">
+          <input type="email" placeholder="Email Address" name="" id="">
+        </div>
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" name="" id="">
+          <input type="text" placeholder="Email Subject" name="" id="">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+
+    <!-- footer design -->
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p><i class='bx bx-envelope'></i> abhijitmajumder906@gmail.com</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="{{ url_for('static',filename='js/script.js')}}"></script>
+  </body>
+</html>
